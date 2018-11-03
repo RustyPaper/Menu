@@ -35,11 +35,11 @@ public class Zad1 {
                 System.out.println("Wprowadzono zły znak, spróbuj ponownie.");
             }
         }
-        if (liczby[0]<liczby[2] || liczby[0]<liczby[2])
+        if (liczby[0]>liczby[1] || liczby[0]>liczby[2])
             System.out.println("Największa spośród podanych liczb to: "+liczby[0]);
-        else if (liczby[1]<liczby[0] || liczby[1]<liczby[2])
+        else if (liczby[1]>liczby[0] || liczby[1]>liczby[2])
             System.out.println("Największa spośród podanych liczb to: "+liczby[1]);
-        else if (liczby[2]<liczby[1] || liczby[2]<liczby[1])
+        else if (liczby[2]>liczby[0] || liczby[2]>liczby[1])
             System.out.println("Największa spośród podanych liczb to: "+liczby[2]);
 
     }

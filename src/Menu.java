@@ -7,21 +7,21 @@ public class Menu {
         menu.runMenu();
     }
     public void runMenu(){
-        Header();
+        header();
         while(!exit){
-            Options();
-            int choice = Choice();
-            Action(choice);
+            options();
+            int choice = choice();
+            action(choice);
         }
     }
-    private void Header(){
+    private void header(){
         System.out.println("*--------------------------*");
         System.out.println("|           Menu           |");
         System.out.println("|    Lista zadań numer 1   |");
         System.out.println("*--------------------------*");
     }
 
-    private void Options(){
+    private void options(){
         System.out.println("\nWybierz zadanie:");
         System.out.println("1) Zadanie 1");
         System.out.println("2) Zadanie 2");
@@ -35,12 +35,12 @@ public class Menu {
         System.out.println("0) Exit");
     }
 
-    private int Choice(){
+    private int choice(){
      Scanner key = new Scanner(System.in);
      int choice = -1;
      while(choice < 0 || choice >9){
          try{
-             System.out.print("Podaj numer zadania: ");
+             System.out.println("\nPodaj numer zadania: ");
              choice = key.nextInt();
          }
          catch (NumberFormatException e){
@@ -50,7 +50,7 @@ public class Menu {
         return choice;
     }
 
-    private void Action(int choice){
+    private void action(int choice){
         switch(choice){
             case 0:
                 exit = true;
