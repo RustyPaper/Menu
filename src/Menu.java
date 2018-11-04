@@ -66,10 +66,10 @@ public class Menu {
                 Zad1.zad3();
                 break;
             case 4:
-                System.out.printf("Test zad 4");
+                Zad1.zad4();
                 break;
             case 5:
-                System.out.printf("Test zad 5");
+                Zad1.zad5();
                 break;
             case 6:
                 System.out.printf("Test zad 6");
