@@ -72,16 +72,16 @@ public class Menu {
                 Zad1.zad5();
                 break;
             case 6:
-                System.out.printf("Test zad 6");
+                Zad1.zad6();
                 break;
             case 7:
-                System.out.printf("Test zad 7");
+                Zad1.zad7();
                 break;
             case 8:
-                System.out.printf("Test zad 8");
+                Zad1.zad8();
                 break;
             case 9:
-                System.out.printf("Test zad 9");
+                Zad1.zad9();
                 break;
                 default:
                     System.out.println("Wystąpił nieznany błąd.");
