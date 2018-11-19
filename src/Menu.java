@@ -1,16 +1,17 @@
 import java.util.Scanner;
 
 public class Menu {
-    boolean exit;
+    private boolean exit;
     public static void main(String[] args) {
         Menu menu = new Menu();
         menu.runMenu();
     }
-    public void runMenu(){
+    private void runMenu(){
+        int choice;
         header();
         while(!exit){
             options();
-            int choice = choice();
+            choice = choice();
             action(choice);
         }
     }
@@ -51,37 +52,38 @@ public class Menu {
     }
 
     private void action(int choice){
+        Lista1 zad1 = new Lista1();
         switch(choice){
             case 0:
                 exit = true;
-                System.out.printf("Dziękuję za skorzystanie z mojego programu.");
+                System.out.println("Dziękuję za skorzystanie z mojego programu.");
                 break;
             case 1:
-                Zad1.zad1();
+                zad1.zad1();
                 break;
             case 2:
-                Zad1.zad2();
+                zad1.zad2();
                 break;
             case 3:
-                Zad1.zad3();
+                zad1.zad3();
                 break;
             case 4:
-                Zad1.zad4();
+                zad1.zad4();
                 break;
             case 5:
-                Zad1.zad5();
+                zad1.zad5();
                 break;
             case 6:
-                Zad1.zad6();
+                zad1.zad6();
                 break;
             case 7:
-                Zad1.zad7();
+                zad1.zad7();
                 break;
             case 8:
-                Zad1.zad8();
+                zad1.zad8();
                 break;
             case 9:
-                Zad1.zad9();
+                zad1.zad9();
                 break;
                 default:
                     System.out.println("Wystąpił nieznany błąd.");
